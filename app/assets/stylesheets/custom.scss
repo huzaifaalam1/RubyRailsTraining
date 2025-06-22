@@ -162,3 +162,7 @@ input {
   border-color: #dc3545; // Bootstrap's "danger" red
   color: #dc3545;
 }
+
+.dropdown-menu.active {
+  display: block;
+}
