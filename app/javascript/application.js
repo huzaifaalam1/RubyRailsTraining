@@ -2,3 +2,6 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "custom/main"
+
+import Rails from "@rails/ujs"
+Rails.start()

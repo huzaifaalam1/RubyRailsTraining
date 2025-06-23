@@ -11,7 +11,7 @@
                 </li>
                 <% if logged_in? %>
                     <li class="nav-item">
-                    <%= link_to "Users", "#", class: "nav-link" %>
+                    <%= link_to "Users", users_path , class: "nav-link" %>
                     </li>
                     <li class="nav-item dropdown">
                     <a href="#" id="account" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -19,14 +19,14 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="account">
                         <li><%= link_to "Profile", current_user, class: "dropdown-item" %></li>
-                        <li><%= link_to "Settings", "#", class: "dropdown-item" %></li>
+                        <li><%= link_to "Settings", edit_user_path(current_user), class: "dropdown-item" %></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><%= button_to "Log out", logout_path, method: :delete, class: "dropdown-item" %></li>
                     </ul>
                     </li>
                 <% else %>
                     <li class="nav-item">
-                    <%= link_to "Log in", "#", class: "nav-link" %>
+                    <%= link_to "Log in", login_path, class: "nav-link" %>
                     </li>
                 <% end %>
             </ul>
