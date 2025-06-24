@@ -2,6 +2,7 @@
 <div class="row">
     <div class="col-md-6 mx-auto">
         <%= form_for(:session, url: login_path, data: { turbo:false }) do |f| %>
+            
             <%= f.label :email %>
             <%= f.text_field :email, class: "form-control"%>
 
