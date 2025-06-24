@@ -1,24 +1,40 @@
-# README
+# 📱 Ruby on Rails Sample App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A full-featured Ruby on Rails application inspired by Twitter, built as part of [Michael Hartl's Ruby on Rails Tutorial](https://www.railstutorial.org/). This project includes user authentication, microposts, following/follower relationships, pagination, and responsive design with Bootstrap.
 
-Things you may want to cover:
+## 🚀 Features
 
-* Ruby version
+- User registration and authentication (with secure password handling)
+- Persistent sessions (log in/log out)
+- Account activation and password reset
+- User profiles with Gravatar integration
+- Micropost creation, editing, and deletion
+- User feed with posts from followed users
+- Follow/unfollow functionality
+- Pagination with Bootstrap styling
 
-* System dependencies
+## 🔧 Built With
 
-* Configuration
+- **Ruby** 3.2.x
+- **Rails** 8.0.x
+- **PostgreSQL**
+- **Bootstrap** (for UI styling)
+- **Hotwire (Turbo + Stimulus)**
+- **Importmap**
+- **BCrypt** (for secure password handling)
+- **WillPaginate** (with Bootstrap renderer)
+- **Faker** (for sample seed data)
 
-* Database creation
+## 📁 Project Structure Highlights
 
-* Database initialization
+- app/models – ActiveRecord models (User, Micropost, Relationship)
+- app/controllers – Application logic for users, sessions, microposts
+- app/views – HTML templates using ERB
+- db/migrate – Database migrations
+- test/ – Unit and integration tests
 
-* How to run the test suite
+## ✅ TODO / Improvements
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Add image upload with Active Storage
+- Add notifications or likes to microposts
+- Enable real-time updates with ActionCable
