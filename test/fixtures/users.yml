@@ -1,1 +1,9 @@
-#empty
+one:
+  name: Example User
+  email: example@user.com
+  password_digest: "$2a$12$wI1ZJYJkq5Dc1ftM4m7xHeTIlp8x8lIFmGK6fJq3J0lP7d85ypMKi"
+
+two:
+  name: Another User
+  email: another@user.com
+  password_digest: "$2a$12$wI1ZJYJkq5Dc1ftM4m7xHeTIlp8x8lIFmGK6fJq3J0lP7d85ypMKi"
